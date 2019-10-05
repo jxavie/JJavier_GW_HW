@@ -99,7 +99,7 @@ word_counter = dict.fromkeys (word_raw, 0)
 for word in word_raw:
     word_counter[word] += 1
 
-# Sort words by count and print the top 10
+# Sort words by count and print the top 10 words
 sorted_words = sorted(word_counter, key = word_counter.get, reverse = True)
 
 

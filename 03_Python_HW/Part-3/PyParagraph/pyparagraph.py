@@ -35,14 +35,12 @@ with open(inputpath, "rt") as inputfile:
     sentences = re.split(r"\.\s", passage)
     sentence_count = len(sentences)
     
-    # Split read package using regular expression operation to remove all punctuation including possessive apostrophes and hyphens
+    # Split read package using regular expression operation to remove all punctuation including possessive apostrophes and hypens
     letters_list = re.split(r"\. |, | |-|\'|\.", passage)
     
     # Calculate total letter count of passage
     for entry in letters_list:
         letters += len(entry)
-    
-    print(letters)
     
     # Calculate average length of words used
     letters_count = format((letters / word_count), '.1f')
