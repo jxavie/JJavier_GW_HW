@@ -102,7 +102,8 @@ for word in word_raw:
 # Sort words by count and print the top 10
 sorted_words = sorted(word_counter, key = word_counter.get, reverse = True)
 
+
 print("\nTop 10 Words")
 print("=============")
 for word in sorted_words[:10]:
-    print(word)
+    print(f"Word: {word:20} Count: {word_counter[word]}")
